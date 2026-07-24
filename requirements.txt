@@ -1,0 +1,42 @@
+# Python >= 3.10 recommended
+# Install PyTorch with CUDA first, e.g.:
+#   pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu126
+
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Diffusion / transformers stack (aligned with original env)
+diffusers==0.30.1
+transformers==4.44.0
+accelerate==1.12.0
+huggingface-hub>=0.24.0
+safetensors>=0.4.0
+tokenizers==0.19.1
+sentencepiece>=0.2.0
+protobuf>=4.0.0
+
+# Core scientific stack
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.0.0
+pillow>=10.0.0
+tqdm>=4.66.0
+pyyaml>=6.0
+regex>=2023.0.0
+requests>=2.31.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+opencv-python>=4.8.0
+scikit-learn>=1.3.0
+scikit-image>=0.22.0
+
+# Watermark evaluation
+lpips==0.1.4
+torchmetrics>=1.2.0
+kornia>=0.7.0
+compressai>=1.2.0
+
+# Text-image quality (CLIP Score); install after torch
+ftfy
+openai-clip
