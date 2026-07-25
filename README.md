@@ -4,7 +4,7 @@ Flow-matching diffusion 水印方法复现代码（SD3 / FLUX）。
 
 在去噪轨迹上注入径向对称频域基，支持嵌入、提取与检测，并提供文生图 / 图生图 / 图像编辑评测脚本。
 
-## 目录结构
+## Directory Structure
 
 ```
 WatermarkFlow/
@@ -27,16 +27,13 @@ WatermarkFlow/
 └── README.md
 ```
 
-## 环境配置
-
-建议使用 Python 3.10+ 与 CUDA GPU。
+## Installation
 
 ```bash
 cd WatermarkFlow
 conda create -n watermarkflow python=3.10 -y
 conda activate watermarkflow
 
-# 按本机 CUDA 版本安装 PyTorch（示例为 cu126）
 pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 \
   --index-url https://download.pytorch.org/whl/cu126
 
