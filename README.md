@@ -40,24 +40,18 @@ pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 \
 pip install -r requirements.txt
 ```
 
-## 数据与模型路径
+## Data and model paths
 
-默认路径均为相对路径，请在 `WatermarkFlow/` 目录下运行脚本。若布局不同，可用命令行参数覆盖。
+The default paths are all relative paths. Please run the script in the `WatermarkFlow/` directory. If the layout is different, you can override it using command-line parameters.
 
-| 资源 | 默认相对路径 |
+| Resource | Default Relative Oath |
 |------|----------------|
-| COCO val2017 图像 | `../dataset/val2017` |
+| COCO val2017 Image | `../dataset/val2017` |
 | COCO captions | `../dataset/annotations/captions_val2017.json` |
-| SD3 权重 | `../../llm_model/stable-diffusion-3-medium-diffusers` |
-| FLUX.1-dev 权重 | `../../llm_model/FLUX.1-dev` |
-| W-Bench 编辑数据 | `../../llm_model/W-Bench/DET_INVERSION_1K/` |
+| SD3 checkpoint | `../../llm_model/stable-diffusion-3-medium-diffusers` |
+| FLUX.1-dev checkpoint | `../../llm_model/FLUX.1-dev` |
+| W-Bench Edit Data | `../../llm_model/W-Bench/DET_INVERSION_1K/` |
 
-也可自行将模型软链到上述相对位置：
-
-```bash
-mkdir -p ../../llm_model
-# 将本地 SD3 / FLUX 目录软链到 ../../llm_model/ 下对应名称
-```
 
 ## 快速开始
 
